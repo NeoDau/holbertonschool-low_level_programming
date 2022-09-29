@@ -14,8 +14,8 @@ int main(void)
 
 	for (a = '0'; a <= '7'; a++)
 	{
-		_putchar(p[a]);
+		putchar(p[a]);
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
