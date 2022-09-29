@@ -11,7 +11,6 @@ void print_alphabet_x10(void)
 
 	for (nueve = '0'; nueve <= '9'; nueve++)
 	{
-		putchar(nueve);
 		for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 		{
 			putchar(alphabet);
