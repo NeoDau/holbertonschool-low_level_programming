@@ -12,9 +12,9 @@ int main(void)
 	int a;
 	char p[] = {"_putchar"};
 
-	for (a = '0'; p[a] != '\0'; a++)
+	for (a = '0'; a <= '9'; a++)
 	{
-		putchar(p[a]);
+		putchar(p['a']);
 	}
 	putchar('\n');
 	return (0);
