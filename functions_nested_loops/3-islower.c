@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  *islower - Shows 1 if the input is a
