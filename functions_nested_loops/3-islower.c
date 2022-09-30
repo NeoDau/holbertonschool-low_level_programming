@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *islower - Shows 1 if the input is a
+ *_islower - Shows 1 if the input is a
  *@c: Another cases, shows 0
  *
  * Return: Always 0
