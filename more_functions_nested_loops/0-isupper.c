@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- *_insupper - Uppercaste
+ *_isupper - Uppercaste
  *
  *Return: 1 & 0
  */
 
-int _insupper(int c)
+int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 	{
