@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- *_insdigit - digit 0 & 9
+ *_isdigit - digit 0 & 9
  *@c: value variable.
  *
  *Return: 1 & 0
  */
 
-int _insdigit(int c)
+int _isdigit(int c)
 {
 	if (c >= 0 && c <= 9)
 	{
