@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- *print_line - 
- *@n:
- *
+ *print_line - line in terminal.
+ *@n: value function
  */
 
 void print_line(int n)
