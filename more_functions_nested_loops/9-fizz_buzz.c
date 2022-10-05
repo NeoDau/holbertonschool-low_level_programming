@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  *main -  num 1 & 100
- *
- *Return: Always 100
+ *@void: no argument
+ *Return: Success 0
  */
 
 int main(void)
@@ -19,7 +19,7 @@ int main(void)
 		{
 			printf("Buzz ");
 		}
-		else if (num % 3 == 0) 
+		else if (num % 3 == 0)
 		{
 			printf("Fizz ");
 		}
