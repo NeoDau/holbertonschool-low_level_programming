@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *print_array: function print elements of array
+ *print_array - function print elements of array
  *@a: value pointer
  *@n: value var
  */
