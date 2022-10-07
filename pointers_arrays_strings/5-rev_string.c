@@ -1,4 +1,5 @@
 #include "main.h"
+#include "2-strlen.c"
 /**
  *rev_string - function
  *@s: value.
@@ -11,7 +12,7 @@ void rev_string(char *s)
 	int y;
 	int a;
 
-	y = strlen(s);
+	y = _strlen(s);
 
 	for (x = 0; x < y / 2; x++)
 	{
