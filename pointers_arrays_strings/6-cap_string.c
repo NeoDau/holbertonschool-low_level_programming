@@ -1,5 +1,6 @@
 #include "main.h"
 #include <ctype.h>
+#include <stdio.h>
 /**
  *cap_string - function
  *@cap: value char
@@ -12,12 +13,15 @@ char *cap_string(char *cap)
 
 	for (a = 0; cap[a] != '\0'; a++)
 	{
-		if (cap[a] == 32 || cap[a] == 44 || cap[a] == 59 ||
-			cap[a] == 46 || cap[a] == 33 || cap[a] == 63 ||
-			cap[a] == 92 || cap[a] == 40 || cap[a] == 41 ||
-			cap[a] == 123 || cap[a] == 125)
+		if (cap[a] == ' ' || cap[a] == '\t' || cap[a] == '\n' ||
+			cap[a] == ',' || cap[a] == ';' || cap[a] == '.' ||
+			cap[a] == '!' || cap[a] == '?' || cap[a] == '"' ||
+			cap[a] == '(' || cap[a] == ')' || cap[a] == '{' ||
+			cap[a] == '}')
 		{
-			cap[a + 1] = toupper(cap[a] + 1) - 32;
+			if (cap[a + 1] >= 'a' && cap[a + 1] <= 'z')
+				cap[a + 1] = cap[a + 1] - 32;
+
 		}
 	}
 	return (cap);
