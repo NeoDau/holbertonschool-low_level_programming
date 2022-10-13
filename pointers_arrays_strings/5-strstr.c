@@ -20,14 +20,14 @@ char *_strstr(char *haystack, char *needle)
 				break;
 			}
 		}
-		if (a != b)
+/**		if (a != b)
 		{
 			haystack++;
 		}
 		else
 		{
 			return (haystack);
-		}
+		}*/
 	}
 	return (NULL);
 }
