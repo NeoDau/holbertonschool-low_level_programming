@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  *cap_string - function
- *@cap: value char
- *Return: cap
+ *@c: value char
+ *Return: c
  */
 
 char *cap_string(char *c)
