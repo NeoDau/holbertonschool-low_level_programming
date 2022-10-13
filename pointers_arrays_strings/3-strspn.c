@@ -2,7 +2,7 @@
 /**
  *_strspn - function length of a prefix
  *@s: value
- *@accept: 
+ *@accept: accept
  *Return: s
  */
 unsigned int _strspn(char *s, char *accept)
