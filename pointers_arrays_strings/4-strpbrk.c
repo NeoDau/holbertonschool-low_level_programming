@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- *
- *
- *
+ *_strpbrk - function that searches a string
+ *@s: string
+ *@accept: yes
+ *Return: 0
  */
 
 char *_strpbrk(char *s, char *accept)
@@ -14,11 +15,11 @@ char *_strpbrk(char *s, char *accept)
 	{
 		for (b = 0; accept[b] != '\0'; b++)
 		{
-			if (s[a] == accept [b])
+			if (s[a] == accept[b])
 			{
 				return (&s[a]);
 			}
 		}
 	}
-	return(0);
+	return (0);
 }
