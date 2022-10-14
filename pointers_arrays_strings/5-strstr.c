@@ -9,6 +9,7 @@ int _strncmp(char *s1, char *s2, int n);
 char *_strstr(char *haystack, char *needle)
 {
 	char *aux = haystack;
+
 	for (; *aux; aux++)
 	{
 		if (_strncmp(aux, needle, _strlen(needle)) == 0)
@@ -17,11 +18,13 @@ char *_strstr(char *haystack, char *needle)
 	return (NULL);
 }
 /**
- *_strcmp - function two strings
+ *_strncmp - function two strings
  *@s1: char
  *@s2: char
+ *@n: value
  *Return: s1[a] & s2[a].
  */
+
 int _strncmp(char *s1, char *s2, int n)
 {
 	int a = 0;
