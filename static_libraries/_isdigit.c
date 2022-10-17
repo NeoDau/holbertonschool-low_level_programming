@@ -1,4 +1,4 @@
 int _isdigit(int c)
 {
-	return (c);
+	return (0);
 }
