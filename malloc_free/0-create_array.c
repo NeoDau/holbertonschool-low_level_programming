@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *create_arary - function array of chars
+ *create_array - function array of chars
  *@size: int
  *@c: char
  *Return: q
