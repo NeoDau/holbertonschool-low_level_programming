@@ -1,0 +1,28 @@
+#include "main.h"
+/**
+ *_strdup - function pointer to a newly allocated space in memor
+ *@str: char
+ *Return: s
+ */
+char *_strdup(char *str)
+{
+	char *dr;
+	int a;
+	int b;
+
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	for (a = 0; str[a] != '\0'; a++)
+	dr = malloc(sizeof(char) * a);
+	if (dr == NULL)
+	{
+		return (NULL);
+	}
+	for (b = 0; str[b] != '\0'; b++)
+	{
+		dr[b] = str[b];
+	}
+	return (dr);
+}
