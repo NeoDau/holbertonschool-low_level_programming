@@ -3,7 +3,7 @@
 /**
  *struct dog - define new struct
  *@name: name dog
- *@age: age dog
+ *@age: age dog.
  *@owner: owner dog
  */
 struct dog
