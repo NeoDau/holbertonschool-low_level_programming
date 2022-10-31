@@ -17,13 +17,14 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 	};
 	int a;
-
-	for (a = 0; a < 5; a++)
+	a = 0;
+	while (a < 5)
 	{
 		if (strcmp(s, ops[a].op) == 0)
 		{
 			return (ops[a].f);
 		}
+		a++;
 	}
 	return (NULL);
 }
