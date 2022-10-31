@@ -18,11 +18,11 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int a;
 
-	for (a = 0; a < 5 a++)
+	for (a = 0; a < 5; a++)
 	{
-		if (strcmp(s, ops[a].op) == 0)
+		if (strcmp(s, op[a].op) == 0)
 		{
-			return (ops[a].f);
+			return (op[a].f);
 		}
 	}
 	return (NULL);
