@@ -6,11 +6,11 @@
  */
 size_t list_len(const list_t *h)
 {
-	int a;
+	int a = 0;
 
-	for (a = 0; h; h = h->next)
+	for (; h; h = h->next)
 	{
-		printf("-> %i elements\n", a);
+		/**printf("-> %d elements\n", a);*/
 		a++;
 	}
 	return (a);
