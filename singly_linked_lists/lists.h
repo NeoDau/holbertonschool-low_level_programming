@@ -4,6 +4,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdarg.h>
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
@@ -20,3 +21,5 @@ typedef struct list_s
 } list_t;
 
 size_t print_list(const list_t *h);
+
+#endif
