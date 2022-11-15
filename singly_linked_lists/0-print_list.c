@@ -7,7 +7,7 @@
  */
 size_t print_list(const list_t *h)
 {
-	int a = 0;
+	size_t int a = 0;
 
 	for (; h; h = h->next)
 	{
@@ -19,7 +19,7 @@ size_t print_list(const list_t *h)
 		{
 			printf("%u %s\n", h->len, h->str);
 		}
-		a++;
+		a++
 	}
 	return (a);
 }
