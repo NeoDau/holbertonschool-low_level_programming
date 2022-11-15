@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  *print_list - print all the elements os fe linked list
- *@h: pointer to de list
+ *@h: pointer to de list.
  *Return: Number of node
  */
 size_t print_list(const list_t *h)
