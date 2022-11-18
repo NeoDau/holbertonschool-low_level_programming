@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  *pop_listint - function delet the firt node
- *head: yhe list node
+ *@head: yhe list node
  *Return: i
  */
 int pop_listint(listint_t **head)
@@ -9,7 +9,7 @@ int pop_listint(listint_t **head)
 	listint_t *a = *head;
 	int i;
 
-	if (!head)
+	if (!*head)
 	{
 		return (0);
 	}
