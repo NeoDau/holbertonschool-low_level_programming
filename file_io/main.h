@@ -1,5 +1,5 @@
-#ifndef _FILE_S.O_
-#define _FILE_S.O_
+#ifndef _FILE_SO_
+#define _FILE_SO_
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/stat.h>
