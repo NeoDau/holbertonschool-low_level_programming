@@ -29,6 +29,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (wr == -1)
 	{
 		close(fd);
+		write(STDOUT_FILENO "fails", 5);
 		return (-1);
 	}
 	close(fd);
