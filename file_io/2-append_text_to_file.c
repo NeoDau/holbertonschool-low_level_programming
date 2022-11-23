@@ -10,8 +10,6 @@ int append_text_to_file(const char *filename, char *text_content)
 	int fd, wr;
 	int len = 0;
 
-	for (; text_content[len]; len++)
-	{}
 	if (filename == NULL)
 	{
 		return (-1);
@@ -25,11 +23,12 @@ int append_text_to_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
+	for (; text_content[len]; len++)
+	{}
 	wr = write(fd, text_content, len);
 	if (wr == -1)
 	{
 		close(fd);
-		write(STDOUT_FILENO "fails", 5);
 		return (-1);
 	}
 	close(fd);
