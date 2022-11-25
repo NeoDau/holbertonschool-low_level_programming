@@ -4,7 +4,7 @@
  *@h: pointer to de list
  *Return: number of node
  */
-size_t dlistint_len(const dlistint_t*h)
+size_t dlistint_len(const dlistint_t *h)
 {
 	size_t node = 0;
 
@@ -20,7 +20,7 @@ size_t dlistint_len(const dlistint_t*h)
 }
 /**
  *delete_dnodeint_at_index - deleete node in a dobly linked list
- *@headd: double pointer to the list
+ *@head: double pointer to the list
  *@index: index of the node to delete
  *Return: 1success, -1 fail
  */
