@@ -4,7 +4,7 @@
  *@h: pointer to de list
  *Return: number of node
  */
-size_t dlistint_len(const dlistint_*h)
+size_t dlistint_len(const dlistint_t*h)
 {
 	size_t node = 0;
 
@@ -31,9 +31,9 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 
 		if (*head == NULL)
 		{
-			return (-1)
+			return (-1);
 		}
-		if (index == NULL)
+		if (!index)
 		{
 			(*head) = ptr->next;
 			if (ptr->next)
@@ -42,7 +42,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			}
 			ptr->next = NULL;
 			free(ptr);
-			return (1)
+			return (1);
 		}
 		for (; a < index; ptr = ptr->next)
 		{
